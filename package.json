@@ -2,7 +2,7 @@
   "name": "demo1",
   "version": "8.1.8",
   "private": true,
-  
+  "homepage": "/app",
   "dependencies": {
     "@formatjs/intl-pluralrules": "4.3.3",
     "@formatjs/intl-relativetimeformat": "10.0.1",
@@ -65,7 +65,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "set PUBLIC_URL=/&& react-scripts build",
+    "build-localhost": "set PUBLIC_URL=/&& react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "prettier --check .",
